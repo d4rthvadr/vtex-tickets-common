@@ -1,6 +1,6 @@
 {
   "name": "@vtex-tickets/common",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Common utilities for the VTEX ticketing system",
   "main": "index.js",
   "types": "index.d.ts",
@@ -12,7 +12,12 @@
   "files": [
     "./build/**/*"
   ],
-  "keywords": ["vtex", "tickets", "common", "utilities"],
+  "keywords": [
+    "vtex",
+    "tickets",
+    "common",
+    "utilities"
+  ],
   "author": "Your Name",
   "license": "ISC",
   "devDependencies": {
