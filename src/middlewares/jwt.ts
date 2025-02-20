@@ -2,6 +2,8 @@ import type { NextFunction, Request, Response } from 'express';
 import { NotAuthorizedError } from '../error';
 import { getUserContext } from '../utils/jwt';
 
+const jwtSecret: string = process.env.JWT_SECRET!;
+
 export const requireAuth = (
   req: Request,
   _res: Response,
@@ -21,10 +23,10 @@ export const currentUser = (
 ) => {
   const token = req?.session?.jwt;
   if (!token) {
-    throw new Error('Invalid token');
+    throw new NotAuthorizedError('Invalid token');
   }
 
-  const curUser = getUserContext(token);
+  const curUser = getUserContext(token, jwtSecret);
 
   req.user = curUser;
 

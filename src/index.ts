@@ -3,8 +3,7 @@ export * from './error';
 
 // utils
 export * from './utils/jwt';
+export * from './utils/encryption'
 
 // middlewares
 export * from './middlewares';
-
-console.log("init: common/src/index.ts");

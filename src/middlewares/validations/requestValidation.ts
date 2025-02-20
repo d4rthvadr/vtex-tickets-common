@@ -11,8 +11,8 @@ export const validateRequest = (
   if (!errors.isEmpty()) {
     const error = errors.array().pop();
     if (error) {
-      const errorResponse = normalizeError(error.msg);
-      return res.status(400).send(errorResponse);
+      const { status, ...rest} = normalizeError(error.msg, 400);
+      return res.status(status).send(rest);
     }
   }
 
