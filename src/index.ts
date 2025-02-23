@@ -7,3 +7,6 @@ export * from './utils/encryption'
 
 // middlewares
 export * from './middlewares';
+
+// Events
+export  * from "./events";
