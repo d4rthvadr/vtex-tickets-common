@@ -12,4 +12,6 @@ export * from './middlewares';
 // Events
 export  * from "./events";
 
+// Enums
+export * from './enums';
 
