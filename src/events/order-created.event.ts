@@ -1,8 +1,14 @@
-import { ChannelEvent } from './channel-event.interface';
+import { OrderStatus } from "../enums";
+import { ChannelEvent } from "./channel-event.interface";
 export interface OrderCreatedEvent extends ChannelEvent {
-    payload: {
+  payload: {
+    id: string;
+    status: OrderStatus;
+    userId: string;
+    expiresAt: string;
+    ticket: {
       id: string;
-      userId?: string;
+      price: number;
     };
-  }
-  
+  };
+}

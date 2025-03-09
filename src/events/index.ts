@@ -6,6 +6,7 @@ export { ChannelEvent } from './channel-event.interface';
 export { TicketUpdatedEvent } from './ticket-updated.event';
 export { TicketCreatedEvent } from './ticket-created.event';
 export { OrderCreatedEvent } from './order-created.event';
+export { OrderCancelledEvent } from './order-cancelled.event';
 
 // Publishers
 export { BasePublisher, PublishEvent } from './base.publisher';    

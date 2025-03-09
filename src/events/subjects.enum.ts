@@ -4,5 +4,5 @@ export enum Subjects {
     TicketUpdated = 'ticket:updated',
     // Order events
     OrderCreated = 'order:created',
-
+    OrderCancelled = 'order:cancelled',
 }
