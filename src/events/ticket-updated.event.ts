@@ -5,6 +5,7 @@ export interface TicketUpdatedEvent extends ChannelEvent {
       title: string;
       price: number;
       userId: string;
+      version: number;
     };
   }
   

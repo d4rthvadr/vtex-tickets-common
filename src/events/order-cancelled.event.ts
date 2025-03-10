@@ -6,6 +6,7 @@ export interface OrderCancelledEvent extends ChannelEvent {
       ticket: {
         id: string;
       };
+      version: number;
     };
   }
   

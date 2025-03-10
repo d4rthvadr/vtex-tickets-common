@@ -10,5 +10,6 @@ export interface OrderCreatedEvent extends ChannelEvent {
       id: string;
       price: number;
     };
+    version: number;
   };
 }

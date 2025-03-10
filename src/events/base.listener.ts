@@ -50,8 +50,8 @@ export abstract class BaseListener <T extends ChannelEvent> {
       subscription.on("message", (msg: Message) => {
         console.log(`Message received: ${this.subject} / ${this.queueGroupName}`);
   
-        const parseData = this.parseMessage(msg);
-        this.onMessage(parseData, msg);
+        const parseData: T = this.parseMessage(msg);
+        this.onMessage(parseData.payload, msg);
       });
     }
   }
