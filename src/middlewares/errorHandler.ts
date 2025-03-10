@@ -34,7 +34,8 @@ export const errorHandler = (
   if (error instanceof CustomError) {
     errorResponse = error.serializeError();
   } else {
-    errorResponse = normalizeError(error?.message || 'Something went wrong', 500);
+    const errMessage: string = process.env.NODE_ENV === 'dev' ? error.message : 'Something went wrong'; // Hide error message in production
+    errorResponse = normalizeError(errMessage, 500);
   }
 
   const { status, ...rest}: ErrorResponse  = errorResponse;
