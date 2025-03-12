@@ -8,7 +8,7 @@ export interface PublishEvent<U = object> {
 
 export abstract class BasePublisher<T extends PublishEvent> {
     abstract subject: T['subject'];
-    private client: Stan;
+    protected client: Stan;
 
     constructor(client: Stan) {
         this.client = client;

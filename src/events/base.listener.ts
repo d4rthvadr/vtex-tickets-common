@@ -5,7 +5,7 @@ import { ChannelEvent } from "./channel-event.interface";
 export abstract class BaseListener <T extends ChannelEvent> {
     abstract subject: Subjects;
     abstract queueGroupName: string;
-    private client: Stan;
+    protected client: Stan;
     protected ackWait: number = 5 * 1000;
     constructor(client: Stan) {
       this.client = client;
