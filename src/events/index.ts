@@ -8,6 +8,7 @@ export { TicketCreatedEvent } from "./ticket-created.event";
 export { OrderCreatedEvent } from "./order-created.event";
 export { OrderCancelledEvent } from "./order-cancelled.event";
 export { OrderExpiredEvent } from "./order-expired.event";
+export { PaymentCreatedEvent } from "./payment-created.event";
 
 // Publishers
 export { BasePublisher, PublishEvent } from "./base.publisher";

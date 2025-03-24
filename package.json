@@ -1,6 +1,6 @@
 {
   "name": "@vtex-tickets/common",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "description": "Common utilities for the VTEX ticketing system",
   "main": "./build/index.js",
   "engines": {
